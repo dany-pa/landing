@@ -74,6 +74,7 @@
     }
 
     @media (max-width: $tablet-breakpoint) {
+        margin-top: 60px;
         &::after:not(.carousel-experts) {
             content: none;
         }

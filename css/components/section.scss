@@ -2,6 +2,8 @@
     padding-block: 60px;
 
     @media (max-width: $tablet-breakpoint) {
-        padding-block: 30px;
+        padding-block: 20px;
+        margin-inline: -20px;
+        padding-inline: 20px;
     }
 }

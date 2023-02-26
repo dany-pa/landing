@@ -10,4 +10,8 @@
     .comment {
         margin-top: 10px;
     }
+
+    @media (max-width: $tablet-breakpoint) {
+        margin-block: 0;
+    }
 }

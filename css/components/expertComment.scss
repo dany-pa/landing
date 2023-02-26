@@ -5,17 +5,47 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__img {
         max-width: 50%;
+        order: 2;
     }
 
     &__text {
         max-width: 55%;
+        order: 3;
     }
 
     .subtitle {
         text-align: center;
+        width: 100%;
+        order: 1;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        padding: 15px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__text {
+            max-width: 70%;
+        }
+        &__img {
+            order: 1;
+        }
+
+        .subtitle {
+            order: 2;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .text {
+            padding-block: 10px;
+        }
     }
 }

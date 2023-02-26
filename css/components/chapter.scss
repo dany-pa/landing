@@ -1,8 +1,13 @@
 .chapter {
+    padding-block: 110px;
+    margin-block: 110px;
+
     * {
         text-align: left;
     }
 
-    padding-block: 110px;
-    margin-block: 110px;
+    @media (max-width: $tablet-breakpoint) {
+        padding-block: 30px;
+        margin-block: 30px;
+    }
 }
