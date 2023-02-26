@@ -127,8 +127,9 @@
                 </p>
             </div>
             <article class="gray-block chapter">
+                <!-- <div class="color-spy"></div> -->
                 <div class="wrapper">
-                    <section>
+                    <section class="section">
                         <blockquote class="quote fixed-width">Цитата в разделе цензура цитата в разделе цензура*</blockquote>
                         <div class="quote-author fixed-width">Автор цитаты, 10101 год</div>
                         <div class="comment fixed-width">
@@ -137,9 +138,9 @@
                         </div>
                         <p class="text fixed-width">
                             Покушения и убийства журналистов, закрытия телеканалов, газет и сроки за экстремизм — все это было неотъемлемой частью внутриполитической российской жизни. 2000-е годы
-                            стали временем постепенной трансформации российского политического режима — от нестабильной демократии ко все более жесткому авторитаризму. Не существует какой-то одной
-                            точки, в которой в России появилась жесткая цензура. Процесс ее создания был растянут во времени, реализовывался разными акторами и с различными обоснованиями — чаще всего,
-                            не в открытой форме введения цензуры.
+                            стали временем постепенной трансформации российского политического режима — от нестабильной демократии ко все более жесткому авторитаризму. Не существует какой-то
+                            однойточки, в которой в России появилась жесткая цензура. Процесс ее создания был растянут во времени, реализовывался разными акторами и с различными обоснованиями — чаще
+                            всего, не в открытой форме введения цензуры.
                         </p>
                     </section>
 
@@ -205,6 +206,7 @@
                     </div>
                 </section>
             </article>
+            <!-- <div style="height: 200vh"></div> -->
         </main>
 
         <script src="./js/embla-carousel.umd.js"></script>
@@ -250,6 +252,34 @@
             initCarousel('.carousel-experts', {
                 loop: true /*что бы луп работал надо минимум 4 слайда*/,
             });
+
+            // const handleIntersect = (entries) => {
+            //     entries.forEach((entry) => {
+            //         console.log(entry.isIntersecting);
+            //         // document.querySelector('.top-menu').classList.toggle('light');
+            //         if (entry.isIntersecting) {
+            //             document.querySelector('.top-menu').classList.add('light');
+            //             console.log('YES');
+            //         } else {
+            //             document.querySelector('.top-menu').classList.remove('light');
+            //             console.log('NO');
+            //         }
+            //     });
+            // };
+
+            // const createObserver = (element, callback) => {
+            //     const options = {
+            //         root: null, // defaults to browser viewport
+            //         rootMargin: '0px',
+            //         threshold: 0.0, // when the element is completely out of view
+            //     };
+
+            //     const observer = new IntersectionObserver(callback, options);
+            //     observer.observe(element);
+            // };
+
+            // const yellowBox = document.querySelector('.color-spy');
+            // createObserver(yellowBox, handleIntersect);
         </script>
     </body>
 </html>

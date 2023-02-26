@@ -1,6 +1,7 @@
 .chapter {
     padding-block: 110px;
     margin-block: 110px;
+    position: relative;
 
     * {
         text-align: left;
@@ -10,4 +11,13 @@
         padding-block: 30px;
         margin-block: 30px;
     }
+}
+
+.color-spy {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: sticky;
+    background-color: red;
 }

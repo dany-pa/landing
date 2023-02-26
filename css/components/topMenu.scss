@@ -6,21 +6,21 @@
     padding: 20px;
     z-index: 999;
 
-    // &--light {
-    //     background-color: #ffffff;
+    &.light {
+        background-color: #ffffff;
 
-    //     .menu-items__item {
-    //         a {
-    //             color: #000000;
-    //         }
-    //     }
+        .menu__item {
+            a {
+                color: #000000;
+            }
+        }
 
-    //     .top-menu__language {
-    //         button {
-    //             color: #ffffff;
-    //         }
-    //     }
-    // }
+        .top-menu__language {
+            button {
+                color: #ffffff;
+            }
+        }
+    }
 
     &__logo {
         display: flex;
