@@ -1,0 +1,7 @@
+.section {
+    padding-block: 60px;
+
+    @media (max-width: $tablet-breakpoint) {
+        padding-block: 30px;
+    }
+}

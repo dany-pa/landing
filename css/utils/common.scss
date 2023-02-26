@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: 'CoFo Sans', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @media (max-width: $tablet-breakpoint) {
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
+
+.fixed-width {
+    max-width: 860px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.gray-block {
+    color: #000000;
+    background-color: #d9d9d9;
+}
+
+.light-block {
+    color: #000000;
+    background-color: #fff;
+}

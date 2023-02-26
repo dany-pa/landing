@@ -1,0 +1,21 @@
+@import './variables/variables.scss';
+@import './utils/reset.scss';
+@import './utils/common.scss';
+@import './fonts/fonts.scss';
+@import './components/text.scss';
+@import './components/title.scss';
+@import './components/subtitle.scss';
+@import './components/chapter.scss';
+@import './components/section.scss';
+@import './components/expertComment.scss';
+@import './components/topMenu.scss';
+@import './components/carousel.scss';
+@import './components/quote.scss';
+@import './components/comment.scss';
+@import './components/articleImage.scss';
+
+.screen-1 {
+    .title {
+        margin-top: 0;
+    }
+}

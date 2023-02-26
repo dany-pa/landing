@@ -1,0 +1,23 @@
+:root {
+    --title-size-modifier: 10px;
+
+    @media (max-width: $small-mobile-breakpoint) {
+        --title-size-modifier: 5px;
+    }
+}
+
+.title {
+    font-weight: 900;
+    font-size: calc(100vw / 10 + var(--title-size-modifier));
+    line-height: 1.1;
+    text-align: center;
+    margin-block: 110px;
+
+    @media (min-width: $desktop-breakpoint) {
+        font-size: 170px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        margin-block: 60px;
+    }
+}

@@ -1,0 +1,22 @@
+.quote {
+    font-size: 100px;
+    font-weight: 900;
+    margin: 0;
+
+    &-author {
+        font-size: 36px;
+        line-height: 52px;
+        font-style: italic;
+        margin-block: 35px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        font-size: 32px;
+
+        &-author {
+            font-size: 16px;
+            line-height: 20px;
+            margin-block: 15px;
+        }
+    }
+}
